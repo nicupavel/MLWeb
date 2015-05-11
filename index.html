@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Machine Learning Visualisation</title>
+
+        <script src="js/pointdata.js"></script>
+        <script src="js/distance.js"></script>
+        <script src="js/kmeans.js"></script>
+        <script src="js/dom.js"></script>
+        <script src="js/menu.js"></script>
+        <script src="js/ui.js"></script>
+        <script src="js/main.js"></script>
+        <link href="css/index.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <div id="main"></div>
+        <div id="menu">
+            <div id="clusterNr">Clusters:<input id="clusters" type="text" size="2" value="2"></div>
+            <div id="clusterDist">Distance:<select id="distance">
+                    <option value="euclidian">euclidian</option>
+                    <option value="maximal">chebyshev</option>
+                    <option value="manhattan">manhattan</option>
+                </select>
+            </div>
+            <div id="animDelay">Delay:<input id="delay" type="text" size="1" value="1"></div>
+            <div id="btnRun" class="btn">Run</div>
+            <div id="btnNew" class="btn">New</div>
+            <div id="btnSave" class="btn">Save <a id='savedata' hidden download='none'></a></div>
+            <div id="btnLoad" class="btn">Load <input id='diskloadfile' type='file'/></div>
+        </div>
+    </body>
+</html>

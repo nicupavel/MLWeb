@@ -1,0 +1,52 @@
+body
+{
+    cursor: pointer;
+}
+
+#menu
+{
+    position:fixed;
+    float: left;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    /*background: rgba(0,0,0,0.6);*/
+    background: white;
+    z-index:3;
+    height: 30px;
+    max-height: 30px;
+    overflow: hidden;
+    color: lightslategray;
+    font-family: Arial;
+    font-size: 14px;
+    border-bottom: 1px solid deepskyblue;
+    font-variant: small-caps;
+}
+
+#menu *
+{
+    margin-top: 2px;
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.btn
+{
+    border: 1px solid lightslategray;
+    background: gray;
+    color: white;
+    border-radius: 5px;
+    min-width: 50px;
+    width:50px;
+    padding: 2px;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.btn input[type=file]
+{
+    position: relative;
+    left: -50px;
+    width: 50px;
+    opacity: 0;
+}
